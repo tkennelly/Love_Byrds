@@ -18,7 +18,12 @@ let edwinQuestions = {
         points: 3}
     ],
     7: [
-
+        {answer: `Introvert`,
+        points: 1},
+        {answer: `Extrovert`,
+        points: 2},
+        {answer: `Ambivert`,
+        points: 3}
     ]
 }
 
@@ -29,7 +34,9 @@ let edwinResponse = {
         3: `Did you just pick those colors because they're what I am wearing? Oh I don't mind, I appreciate the flattery. And they are my favorite colors after all.`
     },
     8: {
-
+        1: `Oh…so…you don't want to meet my friends?`,
+        2: `Oh so fun, then you'd love to visit my friends, right? Though, sometimes it's good to have some time alone too, right?`,
+        3: `Me too! I love my friends and I love to see them as often as I can, but I also love spending time alone, you know? I'm so glad you understand.`
     }
 }
 
