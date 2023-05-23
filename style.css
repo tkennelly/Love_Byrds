@@ -66,6 +66,18 @@ body {
     text-align: center;
 }
 
+#one {
+    display: none;
+}
+
+#two {
+    display: none;
+}
+
+#three {
+    display: none;
+}
+
 /* .bachelorNameBox {
 height: 500px; 
     background-color: red;
