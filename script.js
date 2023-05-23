@@ -114,7 +114,11 @@ const takeStep = (step) => {
         buildBtns(step)
      } else if (step == 10) {
         buildBtns(step)
-    }
+     } else if (step == 13) {
+        buildBtns(step)
+     } else if (step == 16) {
+        buildBtns(step)
+     }
 }
 
 const playGame = () => {

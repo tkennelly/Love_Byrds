@@ -7,7 +7,11 @@ let edwinText = {
     6: `How about a more fun one. In your own opinion, do you consider yourself more extroverted or introverted?`,
     7: `(Which of these describes you the most?)`,
     9: `I think getting an early start on the day makes every hour all the more rewarding. How about you?`,
-    10: `(Are you a morning or a night person?)`
+    10: `(Are you a morning or a night person?)`,
+    12: `So…I've been meaning to ask. Why me? Why do you want to 'score a date' with me, as it were?`,
+    13: `(Why do you want to date Edwin?)`,
+    15: `I value a lot of things in a person, what are some traits you value in potential dates? Or even in potential not-dates! What is a quality that is important to you?`,
+    16: `(Which of these is the best quality?)`
 }
 
 let edwinQuestions = {
@@ -33,7 +37,23 @@ let edwinQuestions = {
         {answer: `Night`,
         points: 2},
         {answer: `Neither`,
-        points: 1}
+        points: 1}   
+    ],
+    13: [
+        {answer: `Short answer`,
+        points: 1},
+        {answer: `Medium answer`,
+        points: 2},
+        {answer: `Long answer`,
+        points: 3}
+    ],
+    16: [
+        {answer: `Kindness`,
+        points: 2},
+        {answer: `Honesty`,
+        points: 1},
+        {answer: `Passion`,
+        points: 3}
             
     ]
 }
@@ -53,6 +73,16 @@ let edwinResponse = {
         1: `Undecided, huh. Well…it's good to be decisive sometimes you know.`,
         2: `Fair enough, nothing wrong with being a night owl.`,
         3: `Yes! Early bird gets the worm as they say! A fresh cup of coffee bright and early in the morning is how I love to start the day!`
+    },
+    14: {
+        1: `Huh…not much of a reason then?`,
+        2: `Alrighty then, to the point I suppose. Nothing to complain about.`,
+        3: `Oh…wow…thank you. I'm…not sure what to say. Flattery will get you everywhere.`
+    },
+    17: {
+        1: `Like…to a fault? Would you not tell a single white lie? Interesting…`,
+        2: `Kindness is a beautiful thing, very important.`,
+        3: `I think it is essential to have some kind of passion in your life! Without passions, pardon me for saying, but life is meaningless!`
     }
 }
 
