@@ -118,6 +118,14 @@ const takeStep = (step) => {
         buildBtns(step)
      } else if (step == 16) {
         buildBtns(step)
+     } else if (step == 19) {
+        buildBtns(step)
+     } else if (step == 22) {
+        buildBtns(step)
+     } else if (step == 25) {
+        buildBtns(step)
+     } else if (step == 28) {
+        buildBtns(step)
      }
 }
 
