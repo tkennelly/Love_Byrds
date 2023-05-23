@@ -19,7 +19,17 @@ let edwinText = {
     24: `You knew this question was coming, or at least could have assumed. What do you think is the best type of bird?`,
     25: `(Which of these birds is the best?)`,
     27: `Ok, how about we rapid-fire some easy questions, shall we? What is your favorite kind of food?`,
-    28: `(Choose your favorite type of food.)`
+    28: `(Choose your favorite type of food.)`,
+    30: `Next! What is your greatest fear?`,
+    31: `(Which of these scare you the most?)`,
+    33: `Next! What is your idea of fun?`,
+    34: `(Which of these activities is most fun to you?)`,
+    36: `Ok, I'll give you a break from the rapid fire. Come real close, I'll give you a hard one….Have you ever done something really…really bad? Like, 'done time' bad?`,
+    37: `(Have you ever been to jail?)`,
+    39: `I myself just love to collect bookmarks of all shapes and sizes. Practical and pretty! Do you collect anything?`,
+    40: `(Do you collect anything?)`,
+    42: `So…I might as well ask…I promise they are friendly but, would you like to hold one of my birds?`,
+    43: `(Hold one of Edwin's Birds?)`
 }
 
 let edwinQuestions = {
@@ -93,8 +103,47 @@ let edwinQuestions = {
         {answer: `Savory`,
         points: 2},
         {answer: `Bitter`,
-        points: 3}
-            
+        points: 3}    
+    ],
+    31: [
+        {answer: `Scarecrows`,
+        points: 3},
+        {answer: `Spiders`,
+        points: 1},
+        {answer: `Heights`,
+        points: 2} 
+    ],
+    34: [
+        {answer: `Playing Video Games`,
+        points: 1},
+        {answer: `Reading a Book`,
+        points: 3},
+        {answer: `Going to a Party`,
+        points: 2}
+    ],
+    37: [
+        {answer: `I would never land myself in trouble.`,
+        points: 1},
+        {answer: `Have you?`,
+        points: 3},
+        {answer: `What are you, a cop?`,
+        points: 2}
+    ],
+    40: [
+        {answer: `Anything that catches my eye`,
+        points: 3},
+        {answer: `Practical items`,
+        points: 2},
+        {answer: `Nothing`,
+        points: 1}
+    ],
+    43: [
+        {answer: `I'd love to`,
+        points: 3},
+        {answer: `No.`,
+        points: 1},
+        {answer: `That's ok, I'll just look.`,
+        points: 2}
     ]
 }
 
@@ -139,10 +188,35 @@ let edwinResponse = {
         2: `Incredibly intelligent creatures! Did you know they are actually omnivores? Some of them, I mean. In New Zealand, native Kea parrots were first observed attacking and killing sheep in 1868 and were persecuted as sheep-killers until 1986, when they were granted protected status. Fascinating. Terrifying.`,
         3: `The robin! An incredible little thing, this young one here on my [location] is named Trumpet, he's an American robin. They are one of my most common birds in all North America. If you'd like to attract more of them to your home, you can create small piles of leaf litter around your yard. Leaf litter attracts worms and other insects, those are the favorite food of robins!`
     },
-    29 : {
+    29: {
         1: `Oh…unfortunately I am just not equipped for terribly sweet things…they make my teeth hurt…`,
         2: `Savory! A nice choice, a good cheddar and chive scone, perhaps?`,
         3: `After my own heart, are we? Not everyone is a fan of bitterness. Coffee, Negroni, the bitter taste of a nice deep dark chocolate. Ah, I'm daydreaming again. Do not mind me.`
+    },
+    32:  {
+        1: `Oh come now, spiders aren't scary! They're good for the ecosystem, they eat other bugs and supply food for a multitude of other animals! Including some birds, if I may add…`,
+        2: `A very rational fear, heights are scary!`,
+        3: `You too!? Well, good to know I'm not alone! Can I let you in on a secret? …The Wizard of Oz…I swear that should be rated as a horror movie…`
+    },
+    35: {
+        1: `Oh dear…I am dreadful at video games. Not sure why, but put a controller in my hand and the character will die instantly. Believe me, Animal Crossing was a nightmare.`,
+        2: `A party, how fun. Friends and family and music and dancing. All things that are good for the soul.`,
+        3: `You're a reader too? What genres? Oh I do love a good book, I've had my nose in The Capture by Kathryn Lasky recently. Always nice to revisit a classic series…`
+    },
+    38: {
+        1: `Oh. Ok… aggressive…`,
+        2: `Ha! Of course not. Could you imagine? These guys following me around are not very intimidating, are they? Plus, could you imagine me brandishing a gun? Let alone pulling it out on a near daily basis…`,
+        3: `Uh…haha…well…funny story…I may have gotten arrested for…taking a penguin from the zoo…but it was all a misunderstanding! I promise! It followed me, I didn't even notice as I was leaving! I did, however, spend a whole 2 hours in the Zoo security office. That's right, you're talking to a man who's done cold hard time.`
+    },
+    41: {
+        1: `Oh…how boring…did you know that if you press a leaf between dry sheets of paper, you can make an attractive and handy bookmark! Why don't you try that some time?`,
+        2: `A decent answer. Collecting things that are needed for everyday life is a good habit to form!`,
+        3: `Oh! Like precious items? Pretty rocks? Ornate trinkets? How lovely! A good eye-catching item is essential in one's life, and the more the merrier!`
+    },
+    44: {
+        1: `Oh…ok.`,
+        2: `Not fond of the hands-on approach? Totally fine! My birds don't mind the staring, that's for sure.`,
+        3: `Fantastic! Take Cashew, he's a Black-Capped Chickadee! Did you know, the Black-Capped Chickadee has adapted to be able to remember thousands of hiding places, as it hides all its seeds and other food items to eat later in different spots every time!`
     }
 }
 
