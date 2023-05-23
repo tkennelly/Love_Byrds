@@ -112,6 +112,8 @@ const takeStep = (step) => {
        buildBtns(step)
      } else if (step == 7) {
         buildBtns(step)
+     } else if (step == 10) {
+        buildBtns(step)
     }
 }
 
