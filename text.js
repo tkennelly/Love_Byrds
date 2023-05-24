@@ -1,7 +1,8 @@
 let edwinText = {
     0: `Why, hello! My name is Holmen E. Byrds, but please feel free to call me Edwin.`, 
-    1: `whatever hes gonna say1`,
-    2: `whatever hes gonna say2`,
+    1: `I don't particularly like long walks on the beach, but perhaps through a park? Or maybe down a city street on a nice cool evening.`,
+    2: `But enough about me, I want to hear about you! I mean, of course I do, that's why we are both here, isn't it? 
+    `,
     3: `Let's start off easy, shall we? I love all types of beautiful colors, especially ones found in nature. What is your favorite color?`,
     4: `(Which of these colors do you like best?)`,
     6: `How about a more fun one. In your own opinion, do you consider yourself more extroverted or introverted?`,
@@ -29,16 +30,18 @@ let edwinText = {
     39: `I myself just love to collect bookmarks of all shapes and sizes. Practical and pretty! Do you collect anything?`,
     40: `(Do you collect anything?)`,
     42: `So…I might as well ask…I promise they are friendly but, would you like to hold one of my birds?`,
-    43: `(Hold one of Edwin's Birds?)`
+    43: `(Hold one of Edwin's Birds?)`,
+    45: `Final question, incredibly important. Hypothetically, if you returned home to find a bird, a common species for your area certainly, had made itself comfortable in your living room, how many times would that have to happen before you thought that maybe someone was perhaps putting the birds there intentionally?`,
+    46: `How many single common birds would you be able to find in your house before you thought a human being was putting them there, and they were not making their way inside accidentally?`
 }
 
 let edwinQuestions = {
     4: [
         {answer: `Blue`,
         points: 1},
-        {answer: `Nuetral`,
+        {answer: `Purple and Red`,
         points: 2},
-        {answer: `Good`,
+        {answer: `Yellow and Green`,
         points: 3}
     ],
     7: [
@@ -58,11 +61,11 @@ let edwinQuestions = {
         points: 1}   
     ],
     13: [
-        {answer: `Short answer`,
+        {answer: `You're attractive.`,
         points: 1},
-        {answer: `Medium answer`,
+        {answer: `You seem like a pretty interesting guy.`,
         points: 2},
-        {answer: `Long answer`,
+        {answer: `The whole bird thing is pretty fascinating, I just had to get to know you more. You seem to have a lot of cool things to say and on top of that, you're not hard to look at.`,
         points: 3}
     ],
     16: [
@@ -144,13 +147,21 @@ let edwinQuestions = {
         points: 1},
         {answer: `That's ok, I'll just look.`,
         points: 2}
+    ],
+    46: [
+        {answer: `0-2`,
+        points: 1},
+        {answer: `3-5`,
+        points: 3},
+        {answer: `6+`,
+        points: 2}
     ]
 }
 
 let edwinResponse = {
     5: {
         1: `Oh…did you know that true blue is the only color not found in nature? Blue Jays actually only look blue due to the structure of their feathers, which distort the reflection of light.`,
-        2: `I suppose that is a nice color, like ___ and ___.`,
+        2: `I suppose those are a nice colors, like lavender and roses.`,
         3: `Did you just pick those colors because they're what I am wearing? Oh I don't mind, I appreciate the flattery. And they are my favorite colors after all.`
     },
     8: {
@@ -186,7 +197,7 @@ let edwinResponse = {
     26: {
         1: `Ah yes… the falcon… See, I would never hate a bird, but for some reason I've never met a falcon that hasn't hated me. Granted I've only met one single falcon…maybe I should take a falconry class…`,
         2: `Incredibly intelligent creatures! Did you know they are actually omnivores? Some of them, I mean. In New Zealand, native Kea parrots were first observed attacking and killing sheep in 1868 and were persecuted as sheep-killers until 1986, when they were granted protected status. Fascinating. Terrifying.`,
-        3: `The robin! An incredible little thing, this young one here on my [location] is named Trumpet, he's an American robin. They are one of my most common birds in all North America. If you'd like to attract more of them to your home, you can create small piles of leaf litter around your yard. Leaf litter attracts worms and other insects, those are the favorite food of robins!`
+        3: `The robin! An incredible little thing, this young one here on my shoulder is named Trumpet, he's an American robin. They are one of my most common birds in all North America. If you'd like to attract more of them to your home, you can create small piles of leaf litter around your yard. Leaf litter attracts worms and other insects, those are the favorite food of robins!`
     },
     29: {
         1: `Oh…unfortunately I am just not equipped for terribly sweet things…they make my teeth hurt…`,
@@ -217,6 +228,11 @@ let edwinResponse = {
         1: `Oh…ok.`,
         2: `Not fond of the hands-on approach? Totally fine! My birds don't mind the staring, that's for sure.`,
         3: `Fantastic! Take Cashew, he's a Black-Capped Chickadee! Did you know, the Black-Capped Chickadee has adapted to be able to remember thousands of hiding places, as it hides all its seeds and other food items to eat later in different spots every time!`
+    },
+    47: {
+        1: `What, are you really so paranoid? Think that the world is out to get you? That someone out there is poised and at-the-ready to fill your house with common songbirds? Absurd.`,
+        2: `Really? So many? And not for a second would you think that maybe someone might be putting them in there? Fascinating. Truly fascinating.`,
+        3: `Now that is a practical answer! A few birds is a coincidence, but too many is an anomaly!`
     }
 }
 
