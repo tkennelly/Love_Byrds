@@ -32,7 +32,8 @@ let edwinText = {
     42: `So…I might as well ask…I promise they are friendly but, would you like to hold one of my birds?`,
     43: `(Hold one of Edwin's Birds?)`,
     45: `Final question, incredibly important. Hypothetically, if you returned home to find a bird, a common species for your area certainly, had made itself comfortable in your living room, how many times would that have to happen before you thought that maybe someone was perhaps putting the birds there intentionally?`,
-    46: `How many single common birds would you be able to find in your house before you thought a human being was putting them there, and they were not making their way inside accidentally?`
+    46: `How many single common birds would you be able to find in your house before you thought a human being was putting them there, and they were not making their way inside accidentally?`,
+    48: `(You've finished! Click continue to see how you fared.)`
 }
 
 let edwinQuestions = {
@@ -236,4 +237,19 @@ let edwinResponse = {
     }
 }
 
-export { edwinText, edwinQuestions, edwinResponse }
+let endMsg = {
+        good: {
+            h: `You got the GOOD ending!`,
+            p: `go on a date or something idk fuck u`
+        },
+        neutral: {
+            h: `You got the NEUTRAL ending!`,
+            p: `try again loser`
+        },
+        bad: {
+            h: `You got the BAD ending!`,
+            p: `what the fuck is wrong with you.`
+        }
+}
+
+export { edwinText, edwinQuestions, edwinResponse, endMsg }

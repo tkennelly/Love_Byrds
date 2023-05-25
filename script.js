@@ -1,4 +1,4 @@
-import { edwinText, edwinQuestions, edwinResponse } from './text.js'
+import { edwinText, edwinQuestions, edwinResponse, endMsg } from './text.js'
 
 //Start Button
 const openStartBtn = document.getElementById('openStart');
@@ -105,39 +105,74 @@ const buildBtns = (step) => {
     threeBtn.addEventListener('click', clickAnswer)
 }
 
+const reloadPage = () => {
+   //just in case
+   pointTotal = 0
+   location.reload()
+}
+
+const endGame = () => {
+   let endHeadText = document.getElementById(`endHeaderText`)
+   let endText = document.getElementById(`endText`)
+   let ending = document.getElementById(`endMsging`)
+   let reloadBtn = document.getElementById(`closeEnding`)
+   
+   bachelorSpeaking.innerHTML = ``
+   continueBtn.style.display = `none`
+
+   if (pointTotal <= 25) {
+      endHeadText.innerHTML = endMsg.bad.h 
+      endText.innerHTML = endMsg.bad.p
+      ending.style.display = `block`
+      reloadBtn.addEventListener('click', reloadPage)
+   } else if (pointTotal > 25 && pointTotal <= 35) {
+      endHeadText.innerHTML = endMsg.neutral.h
+      endText.innerHTML = endMsg.neutral.p
+      ending.style.display = `block`
+      reloadBtn.addEventListener('click', reloadPage)
+   } else if (pointTotal > 35) {
+      endHeadText.innerHTML = endMsg.good.h
+      endText.innerHTML = endMsg.good.p
+      ending.style.display = `block`
+      reloadBtn.addEventListener('click', reloadPage)
+   }
+}
+
 const takeStep = (step) => {
     bachelorSpeaking.innerHTML = edwinText[`${step}`]
 
     if (step == 4) {
-       buildBtns(step)
+         buildBtns(step)
      } else if (step == 7) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 10) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 13) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 16) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 19) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 22) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 25) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 28) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 31) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 34) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 37) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 40) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 43) {
-        buildBtns(step)
+         buildBtns(step)
      } else if (step == 46) {
-        buildBtns(step)
+         buildBtns(step)
+     } else if (step == 49) {
+         endGame()
      }
 }
 
