@@ -1,5 +1,5 @@
 body {
-	background-image: url("bgsketch.png");
+	background-image: url("background.png");
     background-size: cover;
 }
 
@@ -96,6 +96,7 @@ body {
 }
 
 .edwinPhotos {
+    display: flex;
     position: fixed;
     top: 40%;
     left: 31.5%;

@@ -57,6 +57,7 @@ const showResponse = (e) => {
     console.log('in showresponse')
     let points = parseInt(e.target.dataset.points)
     let step = parseInt(continueBtn.dataset.step)
+    // let reactImage = document.getElementById('normal')
     console.log(`current step: ${step}`)
     bachelorSpeaking.innerHTML = edwinResponse[`${step}`][`${points}`]
 
@@ -76,6 +77,13 @@ const showResponse = (e) => {
 
     step++
     continueBtn.dataset.step = step
+
+// replace image with reaction
+//     if (edwinResponse[`[${points}]`] == 1) {
+//         reactImage.innerHTML = `<img id="normal" src="sad.png"/>`
+//     } else if (edwinResponse[`${points}`] == 3) {
+//         reactImage.innerHTML = `<img id="normal" src="happy.png"/>`
+//     }
 }
 
 const clickAnswer = (e) => {
