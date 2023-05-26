@@ -41,8 +41,6 @@ let pointTotal = 0
 
 // START QUESTIONS
 
-console.log('working')
-
 let reactImage = document.getElementById('normal')
 
 let continueBtn = document.getElementById('continue')
@@ -56,10 +54,8 @@ let twoBtn = document.getElementById('two')
 let threeBtn = document.getElementById('three')
 
 const showResponse = (e) => {
-    console.log('in showresponse')
     let points = parseInt(e.target.dataset.points)
     let step = parseInt(continueBtn.dataset.step)
-    console.log(`current step: ${step}`)
     bachelorSpeaking.innerHTML = edwinResponse[`${step}`][`${points}`]
 
     oneBtn.innerHTML = ''
@@ -85,17 +81,9 @@ const showResponse = (e) => {
     step++
     continueBtn.dataset.step = step
 
-// replace image with reaction
-//     if (edwinResponse[`[${points}]`] == 1) {
-//         reactImage.innerHTML = `<img id="normal" src="sad.png"/>`
-//     } else if (edwinResponse[`${points}`] == 3) {
-//         reactImage.innerHTML = `<img id="normal" src="happy.png"/>`
-//     }
 }
 
 const clickAnswer = (e) => {
-   console.log(e)
-   console.log(e.target.dataset.points)
    pointTotal += parseInt(e.target.dataset.points)
    showResponse(e)
 }
@@ -192,14 +180,11 @@ const takeStep = (step) => {
 }
 
 const playGame = () => {
-    console.log(`points: ${pointTotal}`)
     let step = parseInt(continueBtn.dataset.step)
-    console.log(`current step: ${step}`) 
     takeStep(step)
     reactImage.src = 'normal.png'
     step++
     continueBtn.dataset.step = step
-    console.log(`next step: ${continueBtn.dataset.step}`)
 }
 
 continueBtn.addEventListener('click', playGame)
