@@ -240,15 +240,15 @@ let edwinResponse = {
 let endMsg = {
         good: {
             h: `You got the GOOD ending!`,
-            p: `go on a date or something idk fuck u`
+            p: `You and Edwin go on a lovely date. You visit the local botanical gardens and Edwin teaches your which flowers and plants will attract which local bird species. You get the feeling this is the bigging of a long and beautiful relationship.`
         },
         neutral: {
             h: `You got the NEUTRAL ending!`,
-            p: `try again loser`
+            p: `Edwin is not too sure about the two of you yet. "How about another go at it?" He asks you. Well, how about it?`
         },
         bad: {
             h: `You got the BAD ending!`,
-            p: `what the fuck is wrong with you.`
+            p: `You two are, simply put, a horrible match. Maybe pay more attention to what HE likes next time.`
         }
 }
 
