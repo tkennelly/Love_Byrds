@@ -5,6 +5,8 @@
 
 ![game screenshot](gameScreenShot.png)
 
+[Love Byrds](https://love-byrds.surge.sh/)
+
 Love Byrds is an interactable dating sim that has players answer a series of questions from their potential date: Holmen E. Byrds, or Edwin for short. Players will earn points based on Edwin's perception of their answers and by the end of their interaction, they will know if they are able to score a date with him!
 
 By the end of this project there were still a few things I wanted to do, specifically, add some questions that had different types of input such as a submission box or drop-down menu. I had also hoped to make the UI look clean on all different aspect ratios.
